@@ -159,6 +159,7 @@ And for our surprise we are allowed to perform all commands without the need of 
 ![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/b6197946-fec0-4e9f-89cc-2954764ee77c)
 
 And like that we were able to find the name of the third ingredient, so if we want to read it, we will just use `less` command in this way 
+
 `sudo less /root/3rd.txt`
 
 ![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/273ecced-a4c1-4e68-8287-fc97c1ec1b7a)
