@@ -1,4 +1,4 @@
-# TryHackMe-Pickle-Rick
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/fcd0573f-a446-4dbb-b985-417e9b7e1ae0)# TryHackMe-Pickle-Rick
 This is a writeup for Pickle Rick TryHackMe machine!  
 https://tryhackme.com/room/picklerick
 
@@ -134,6 +134,39 @@ And just like that we are user root and now we can read the third ingredient wit
 ![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/a3d4301f-0bae-4b87-a2f4-92da370c1481)
 
 ## Second Way
+
+If we decide to take this path, we need to proceed with our command panel we already have in **/portal.php** so, lets begin
+
+If we perform a `ls` on the command panel we can also find a file called **clue.txt**, if we go to the route of this file like we did with the first ingredient we will find this
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/bce2d97a-308d-4494-89d2-9d8e67583a05)
+
+After a while looking around the system we can find the second ingredient at **/home/rick**
+
+As we know, `cat` command is disabled for the command panel, so if we research around internet we find that we can use `less` command to view the content of the file in the next way
+`less '/home/rick/second ingredient'`
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/175ef234-c04a-406b-be40-80fc55332fc5)
+
+Like that, we are now able to read the content of the second ingredient, so lets read the content of the third ingredient
+
+Lets use `sudo -l` to see which privileges we have
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/38de0a54-f432-4670-a30e-dccc82807ba9)
+
+And for our surprise we are allowed to perform all commands without the need of any kind of password, lets do a sudo ls /root to check this
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/b6197946-fec0-4e9f-89cc-2954764ee77c)
+
+And like that we were able to find the name of the third ingredient, so if we want to read it, we will just use `less` command in this way 
+`sudo less /root/3rd.txt`
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/273ecced-a4c1-4e68-8287-fc97c1ec1b7a)
+
+And just like that we have completed this room!
+
+Hope this helped.
+
 
 
 
