@@ -31,5 +31,15 @@ Now we'll proceed to visit the website located at port 80
 ![image_2024-04-26_001448881](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/028603ac-1f72-4fd7-8b5a-83b00aa96054)
 This is the first thing we see on the website, if we take a view on the page source we can find this
 ![image_2024-04-26_001731557](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/01135460-5b08-40c8-bfb3-cae0ffbea415)
-
+Looks like we found an username, next, we will proceed to find hidden directories that may have been hidden from us
+# Directory Fuzzing
+## Using Gobuster
+**Gobuster** is a tool used to brute-force:
+* URIs (directories and files) in web sites.
+* DNS subdomains (with wildcard support).
+* Virtual Host names on target web servers.
+* Open Amazon S3 buckets.
+* Open Google Cloud buckets.
+* TFTP servers
+#### If you wish to install Gobuster, here is the link to the official github repository: https://github.com/OJ/gobuster
 
