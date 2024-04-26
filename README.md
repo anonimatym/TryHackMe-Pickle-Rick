@@ -23,3 +23,9 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.41 (Ubuntu)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+## Service Enumeration
+### Port 22 - SSH
+### Port 80 - HTTP
+
+Now we'll proceed to check the website located at port 80
+
