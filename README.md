@@ -2,7 +2,7 @@
 This is a writeup for Pickle Rick TryHackMe machine!  
 https://tryhackme.com/room/picklerick
 
-##Scanning & Enumeration
+## Scanning & Enumeration
 
 To begin with this machine, we will perform a nmap scan on our target:
 
