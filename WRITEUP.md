@@ -32,7 +32,7 @@ Now we'll proceed to visit the website located at port 80
 This is the first thing we see on the website, if we take a view on the page source we can find this
 ![image_2024-04-26_001731557](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/01135460-5b08-40c8-bfb3-cae0ffbea415)
 Looks like we found an username, next, we will proceed to find hidden directories that may have been hidden from us
-# Directory Fuzzing
+## Directory Fuzzing
 ## Using Gobuster
 **Gobuster** is a tool used to brute-force:
 * URIs (directories and files) in web sites.
