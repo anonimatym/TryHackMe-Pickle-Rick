@@ -164,9 +164,8 @@ And like that we were able to find the name of the third ingredient, so if we wa
 
 ![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/273ecced-a4c1-4e68-8287-fc97c1ec1b7a)
 
-And just like that we have completed this room!
+# And just like that you have completed this room!
 
-Hope this helped.
 
 
 
