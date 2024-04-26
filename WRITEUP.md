@@ -30,5 +30,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Now we'll proceed to visit the website located at port 80
 ![image_2024-04-26_001448881](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/028603ac-1f72-4fd7-8b5a-83b00aa96054)
 This is the first thing we see on the website, if we take a view on the page source we can find this
+![image_2024-04-26_001731557](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/01135460-5b08-40c8-bfb3-cae0ffbea415)
 
 
