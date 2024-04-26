@@ -27,5 +27,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ### Port 22 - SSH
 ### Port 80 - HTTP
 
-Now we'll proceed to check the website located at port 80
+Now we'll proceed to visit the website located at port 80
+![image_2024-04-26_001448881](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/028603ac-1f72-4fd7-8b5a-83b00aa96054)
+
 
