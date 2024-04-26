@@ -117,4 +117,23 @@ If we move to this directory and do a `ls` on it, we will find the second ingred
 
 ![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/6fab408b-ff97-424a-ae4e-5d36c30ea34b)
 
+Or we can just ls the directory to see what is inside of it
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/a33781a9-c3d7-45c6-9c04-862b6a78352d)
+
+We will find the third ingredient on **/root** but if we try to `cd` on it, we will find we are unable to do it, so lets check for our privileges with `sudo -l`
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/70d7d8f8-d240-4304-9b52-8d068f9c4dcc)
+
+To our surprise, all commands are allowed without any password needed so lets just do a `sudo bash -i` to escalate our session into a root one
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/819bc036-1b5d-4891-8c6c-e4ad6652600c)
+
+And just like that we are user root and now we can read the third ingredient within the /root directory
+
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/a3d4301f-0bae-4b87-a2f4-92da370c1481)
+
+## Second Way
+
+
 
