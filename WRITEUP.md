@@ -73,4 +73,17 @@ If we check the robots.txt file we will encounter
 ![image_2024-04-26_003953275](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/f874ffe2-2943-4d26-991e-d1a19f75a39b)
 This could be the password for our **/login.php** so lets try
 ![image_2024-04-26_004100740](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/a0f5cb3e-e8eb-40fd-949e-1416b55078db)
-And we were right, it was the password for our **/login.php**
+And we were right, it was indeed the password for our **/login.php**
+## Command Panel
+The site we were redirected has a command panel, so, lets try to execute some simple command to see if it allows us to do so
+![image_2024-04-26_004451144](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/9fb45fdf-e904-4727-a731-71c03ef058e0)
+And with this, we realize we can actually execute commands, if we try to execute a **cat** in Sup3rS3cretPickl3Ingred.txt, we are disallowed to perform it
+![image_2024-04-26_004650641](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/488fe1f4-f619-46bc-a066-36a7ea11114c)
+We can read the file if we do this though
+```
+http://<ip>/Sup3rS3cretPickl3Ingred.txt
+```
+And like that, we will have the first ingredient
+
+Next thing we are looking to do, is getting a reverse shell using the command panel
+
