@@ -2,6 +2,8 @@
 This is a writeup for Pickle Rick TryHackMe machine!  
 https://tryhackme.com/room/picklerick
 
+**REMEMBER TO CHANGE THE ATTACKER MACHINE TO THE ONE TRYHACKME ASSIGNED, MINE IS NOT SAME AS YOURS**
+
 ## Scanning & Enumeration
 
 To begin with this machine, we will perform a nmap scan on our target:
