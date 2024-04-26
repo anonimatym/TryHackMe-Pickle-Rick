@@ -1,4 +1,4 @@
-![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/fcd0573f-a446-4dbb-b985-417e9b7e1ae0)# TryHackMe-Pickle-Rick
+# TryHackMe-Pickle-Rick
 This is a writeup for Pickle Rick TryHackMe machine!  
 https://tryhackme.com/room/picklerick
 
