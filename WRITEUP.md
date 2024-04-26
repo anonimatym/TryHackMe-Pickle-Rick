@@ -71,9 +71,7 @@ This are some directory gobuster could find for us, we could be interested in **
 ![image_2024-04-26_003529817](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/bbb9309b-3f13-431f-9c04-31f441a966f2)
 We will find a login page, we already have the username but we lack the password, so we can keep with the directory fuzzing
 At some point, we will encounter a file called **robots.txt**, most websites will have a robots.txt file which basically tells the sitee what it is allowed and not allowed to index.
-If we check the robots.txt file we will encounter some sort of password we can use
-![image_2024-04-26_003953275](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/f874ffe2-2943-4d26-991e-d1a19f75a39b)
-This could be the password for our **/login.php** so lets try
+If we check the robots.txt file we will encounter some sort of password we can use since this could be the password for our **/login.php** so lets try
 ![image_2024-04-26_004100740](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/a0f5cb3e-e8eb-40fd-949e-1416b55078db)
 And we were right, it was indeed the password for our **/login.php**
 ## Command Panel
