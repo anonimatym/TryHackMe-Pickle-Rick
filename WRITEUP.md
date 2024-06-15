@@ -2,7 +2,7 @@
 This is a writeup for Pickle Rick TryHackMe machine!  
 https://tryhackme.com/room/picklerick
 
-**REMEMBER TO CHANGE THE ATTACKER MACHINE TO THE ONE TRYHACKME ASSIGNED, MINE IS NOT SAME AS YOURS**
+**REMEMBER TO CHANGE THE IP OF THE MACHINE TO THE ONE TRYHACKME ASSIGNED, MINE IS NOT SAME AS YOURS**
 
 ## Scanning & Enumeration
 
